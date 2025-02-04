@@ -1,0 +1,6 @@
+[submodule "tekton-caches"]
+	path = tekton-caches
+	url = https://github.com/openshift-pipelines/tekton-caches.git
+[submodule "opc"]
+	path = opc
+	url = https://github.com/openshift-pipelines/opc.git
