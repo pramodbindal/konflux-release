@@ -2,7 +2,7 @@
 apiVersion: appstudio.redhat.com/v1alpha1
 kind: ImageRepository
 metadata:
-  name: openshift-pipelines-main-tekton-cache
+  name: openshift-pipelines-main-tekton-caches
   annotations:
     image-controller.appstudio.redhat.com/update-component-image: "true"
   labels:
@@ -10,5 +10,5 @@ metadata:
     appstudio.redhat.com/application: pbindal-test-main-opc
 spec:
   image:
-    name: openshift-pipelines-main/tekton-cache
+    name: openshift-pipelines-main/tekton-caches
     visibility: public
