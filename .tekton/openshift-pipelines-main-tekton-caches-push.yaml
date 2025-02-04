@@ -15,7 +15,7 @@ metadata:
     appstudio.openshift.io/application: pbindal-test-main
     appstudio.openshift.io/component: tekton-caches
     pipelines.appstudio.openshift.io/type: build
-  name: openshift-pipelines-tekton-cache-on-push
+  name: openshift-pipelines-tekton-caches-on-push
   namespace: tekton-ecosystem-tenant
 spec:
   params:
@@ -24,9 +24,9 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/openshift-pipelines-main/tekton-cache:{{revision}}
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/openshift-pipelines-main/tekton-caches:{{revision}}
   - name: dockerfile
-    value: .konflux/dockerfiles/opc.Dockerfile
+    value: .konflux/dockerfiles/cache.Dockerfile
   - name: build-platforms
     value:
     - linux/x86_64

@@ -12,5 +12,5 @@ spec:
   source:
     git:
       url: https://github.com/pramodbindal/konflux-release.git
-      dockerfileUrl: .konflux/dockerFiles/cache.Dockerfile
+      dockerfileUrl: .konflux/dockerfiles/cache.Dockerfile
       revision: main
