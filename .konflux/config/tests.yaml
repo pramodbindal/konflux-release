@@ -7,8 +7,10 @@ metadata:
 spec:
   application: pbindal-test-main
   contexts:
-    - description: Application testing for pbindal-test-main-opc
-      name: component_pbindal-test-main-opc
+    - description: Application testing for openshift-pipelines-main-opc
+      name: component_openshift-pipelines-main-opc
+    - description: Application testing for openshift-pipelines-main-tekton-cache
+      name: component_openshift-pipelines-main-tekton-caches
   params:
     - name: POLICY_CONFIGURATION
       value: tekton-ecosystem-tenant/tekton-ecosystem-tenant-containers

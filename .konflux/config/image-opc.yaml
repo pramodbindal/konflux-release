@@ -2,7 +2,7 @@
 apiVersion: appstudio.redhat.com/v1alpha1
 kind: ImageRepository
 metadata:
-  name: pbindal-test-main-opc
+  name: openshift-pipelines-main-opc
   annotations:
     image-controller.appstudio.redhat.com/update-component-image: "true"
   labels:
@@ -10,5 +10,5 @@ metadata:
     appstudio.redhat.com/application: pbindal-test-main-opc
 spec:
   image:
-    name: pbindal-test-main/opc
+    name: openshift-pipelines-main/opc
     visibility: public

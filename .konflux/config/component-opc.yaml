@@ -4,7 +4,7 @@ kind: Component
 metadata:
   annotations:
     build.appstudio.openshift.io/pipeline: '{"name":"docker-build","bundle":"latest"}'
-  name: pbindal-test-main-opc
+  name: openshift-pipelines-main-opc
 spec:
   componentName: opc
   application: pbindal-test-main

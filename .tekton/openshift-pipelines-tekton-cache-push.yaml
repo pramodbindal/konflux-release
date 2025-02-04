@@ -12,10 +12,10 @@ metadata:
       == "main"
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: pbindal-test-main
+    appstudio.openshift.io/application: openshift-pipelines
     appstudio.openshift.io/component: opc
     pipelines.appstudio.openshift.io/type: build
-  name: pbindal-test-main-opc-on-push
+  name: openshift-pipelines-tekton-cache-on-push
   namespace: tekton-ecosystem-tenant
 spec:
   params:
@@ -24,7 +24,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/openshift-pipelines-main/opc:{{revision}}
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/openshift-pipelines-main/tekton-cache:{{revision}}
   - name: dockerfile
     value: .konflux/dockerfiles/opc.Dockerfile
   - name: build-platforms
