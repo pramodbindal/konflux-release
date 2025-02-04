@@ -7,6 +7,6 @@
 	url = https://github.com/openshift-pipelines/opc
 	branch = release-v1.17.x
 [submodule "tekton-cache"]
-	path = upstream/tekton-cache
+	path = upstream/tekton-caches
 	url = https://github.com/openshift-pipelines/tekton-caches
 	branch = release-v1.18.x
