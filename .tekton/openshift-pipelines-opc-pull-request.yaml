@@ -16,7 +16,7 @@ metadata:
     appstudio.openshift.io/application: pbindal-test-main
     appstudio.openshift.io/component: opc
     pipelines.appstudio.openshift.io/type: build
-  name: pbindal-test-main-opc-on-pull-request
+  name: openshift-pipelines-opc-on-pull-request
   namespace: tekton-ecosystem-tenant
 spec:
   params:
